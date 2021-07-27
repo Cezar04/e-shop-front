@@ -1,12 +1,15 @@
 import React,{useState} from 'react';
 import { Transition } from "@headlessui/react";
+import SecondaryMenu from './SecondaryMenu';
+
+// nu uita sa pui partea de setari
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
 <div>
-    <nav className="bg-gray-800">
+    <nav className="bg-gray-800 fixed z-50 w-full">
         <div className="  mx-auto px-4  sm:px-6 lg:px-8">
         
         <div className="flex justify-between h-16 items-center ">
@@ -25,11 +28,7 @@ function Navbar() {
                 </div>
 
                 <div className="hidden md:block">
-                        <ul className="flex ">
-                           <li className=" text-white  font-medium px-4"><i class="fas fa-search"></i></li>
-                           <li className=" text-white block font-medium px-4"><i class="fas fa-shopping-cart"></i></li>
-                           <li className=" text-white font-medium px-4"><i class="far fa-user"></i></li>
-                       </ul>
+                  <SecondaryMenu />
                 </div>
                  
           
@@ -93,6 +92,7 @@ function Navbar() {
           >
             {(ref) => (
               <div className="md:hidden" id="mobile-menu">
+           
                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                
                   <a
@@ -116,9 +116,14 @@ function Navbar() {
                     Meniu3
                   </a>
                 </div>
+                <div className="flex justify-center">
+                  <SecondaryMenu />
+                </div>
+        
               </div>
             )}
           </Transition>
+    
     </nav>
 </div>
     )
