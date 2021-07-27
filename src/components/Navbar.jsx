@@ -2,21 +2,19 @@ import React,{useState} from 'react';
 import { Transition } from "@headlessui/react";
 import SecondaryMenu from './SecondaryMenu';
 
-// nu uita sa pui partea de setari
-
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
 <div>
-    <nav className="bg-gray-800 fixed z-50 w-full">
+    <nav className="bg-black fixed z-50 w-full">
         <div className="  mx-auto px-4  sm:px-6 lg:px-8">
         
         <div className="flex justify-between h-16 items-center ">
             
 
                 <div className="flex">
-                    <h1 className="text-white text-2xl font-medium">E-ShopLOGO</h1>
+                    <h1 className="text-yellow-500 text-2xl font-medium">4N!TURE</h1>
                 </div>
 
                 <div className="hidden md:block">
