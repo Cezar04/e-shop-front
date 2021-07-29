@@ -1,6 +1,9 @@
 import Categories from "./components/Categories";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Testimonials from "./components/Testimonials";
+import TopBuy from "./components/TopBuy";
 
 
 
@@ -10,6 +13,9 @@ function App() {
       <Navbar />
       <Header/>
       <Categories/>
+      {/* <TopBuy/> */}
+      <Testimonials/>
+      <Footer/>
     
     </div>
   );
