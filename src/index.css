@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.kitchen{
+  background-image: url("https://images.pexels.com/photos/3637728/pexels-photo-3637728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+
+.bedroom{
+  background-image: url("https://images.pexels.com/photos/1374125/pexels-photo-1374125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+}
+
+.bathroom{
+  background-image: url("https://images.pexels.com/photos/6032203/pexels-photo-6032203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.livingRoom{
+  background-image: url("https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+}
