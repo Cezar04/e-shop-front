@@ -4,15 +4,15 @@ function Testimonials() {
     const [change, setChange] = useState(false);
     return (
         <div>
-            <div className="container mx-auto pt-16">
+            <div className="container mx-auto pt-16 p-5">
                 <h1 className="text-yellow-500 font-medium xl:text-5xl text-3xl mb-4 text-center md:text-center lg:text-center">Hear From Our Customers</h1>
                 <p className="text-xl text-center md:text-center xl:w-2/3 lg:w-2/3 w-11/12 mx-auto text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus fugiat vel sint esse minus optio sapiente consequatur maiores explicabo!</p>
             </div>
             <div className="w-full bg-gray-100 py-36">
-                <div className="container relative mx-auto">
+                <div className=" container relative mx-auto">
               
               
-                    <section id="carousel">
+                    <section id="carousel" >
                         <figure className={change ? "hidden" : "block"}>
                             <div className="w-11/12 mx-auto bg-white py-10 sm:px-16 px-10 relative">
                                 <div className="flex items-center justify-between pb-8">
