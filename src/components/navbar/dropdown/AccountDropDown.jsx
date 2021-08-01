@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import {createPopper} from '@popperjs/core';
 
 
@@ -34,9 +35,7 @@ function AccountDropDown() {
                     ? closeDropdownPopover()
                     : openDropdownPopover();
                 }}
-                onBlur={()=>{
-                    closeDropdownPopover()
-                }}
+              
               >
                <i class="far fa-user"></i>
               </button>
@@ -49,35 +48,35 @@ function AccountDropDown() {
                 style={{ minWidth: "12rem" }}
               >
                   <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
-                <a
-                  href="#pablo"
+                <NavLink
+                  to="#pablo"
                   className={
                     "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap " 
                   }
-                  onClick={e => e.preventDefault()}
+               
                 >
                   My Account
-                </a>
+                </NavLink>
                 <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
-                <a
-                  href="#pablo"
+                <NavLink
+                  to="/login"
                   className={
                     "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-white " 
                   }
-                  onClick={e => e.preventDefault()}
+                
                 >
                  Login
-                </a>
+                </NavLink>
                 <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
-                <a
-                  href="#pablo"
+                <NavLink
+                  to="/register"
                   className={
                     "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-white " 
                   }
-                  onClick={e => e.preventDefault()}
+                  
                 >
                   Register
-                </a>
+                </NavLink>
                 <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
               </div>
             </div>

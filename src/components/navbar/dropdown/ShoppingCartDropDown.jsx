@@ -33,9 +33,7 @@ function ShoppingCartDropDown() {
                     ? closeDropdownPopover()
                     : openDropdownPopover();
                 }}
-                onBlur={()=>{
-                    closeDropdownPopover()
-                }}
+       
               >
               <i class="fas fa-shopping-cart"></i>
               </button>

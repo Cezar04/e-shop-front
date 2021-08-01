@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { Transition } from "@headlessui/react";
 import SecondaryMenu from './SecondaryMenu';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,14 +15,14 @@ function Navbar() {
             
 
                 <div className="flex">
-                    <h1 className="text-yellow-500 text-2xl font-medium">4N!TURE</h1>
+                    <Link to="/"><h1 className="text-yellow-500 text-2xl font-medium">4N!TURE</h1></Link>
                 </div>
 
                 <div className="hidden md:block">
                        <ul className="flex ">
                            <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Meniu1</li>
-                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Meniu2</li>
-                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Meniu3</li>
+                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">About Us</li>
+                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Contact</li>
                        </ul>
                 </div>
 
