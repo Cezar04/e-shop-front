@@ -1,24 +1,28 @@
-import BestBuy from "./components/BestBuy";
-import Categories from "./components/Categories";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Testimonials from "./components/Testimonials";
+import {BrowserRouter, Route} from 'react-router-dom';
+
+import Footer from "./components/footer/Footer";
+import Home from './components/homePage/Home';
+import Navbar from "./components/navbar/Navbar";
+import Register from './components/register&login/Register';
+import Login from './components/register&login/Login';
+
 
 
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
+     
       <Navbar />
-      <Header/>
-      <Categories/>
-      <BestBuy/>
-      {/* <TopBuy/> */}
-      <Testimonials/>
+      <Route exact path='/' render={(props)=><Home {...props}/>}/>
+      <Route exact path="/register" render={(props)=><Register {...props}/>}/>
+      <Route exact path="/login" render={(props)=><Login {...props}/>}/>
+
       <Footer/>
     
     </div>
+    </BrowserRouter>
   );
 }
 

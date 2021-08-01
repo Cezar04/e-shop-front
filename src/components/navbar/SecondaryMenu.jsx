@@ -1,5 +1,4 @@
 import React from 'react';
-import {createPopper} from '@popperjs/core';
 import AccountDropDown from './dropdown/AccountDropDown';
 import ShoppingCartDropDown from './dropdown/ShoppingCartDropDown';
 import SearchDropDown from './dropdown/SearchDropDown';
