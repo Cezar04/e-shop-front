@@ -20,9 +20,9 @@ function Navbar() {
 
                 <div className="hidden md:block">
                        <ul className="flex ">
-                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Meniu1</li>
+                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"><Link to="/shop">Shop</Link></li>
                            <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">About Us</li>
-                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Contact</li>
+                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"><Link to="/contact">Contact</Link></li>
                        </ul>
                 </div>
 

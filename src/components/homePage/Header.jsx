@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 function Header() {
   return (
@@ -6,7 +7,7 @@ function Header() {
   
       <div className="">
         <img className="static h-screen  sm:pt-36 sm:pl-36 sm:pb-36 sm:w-screen sm:pr-10" src="https://images.pexels.com/photos/3965520/pexels-photo-3965520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-        <a href="#" className="font-medium hover:text-black absolute top-3/4  sm:top-2/4 bg-yellow-500 text-3xl p-6 text-white sm:transform sm:rotate-90">DISCOVER ---------> </a>
+        <a href="#all" className="font-medium hover:text-black absolute top-3/4  sm:top-2/4 bg-yellow-500 text-3xl p-6 text-white sm:transform sm:rotate-90">DISCOVER ---------> </a>
       </div>
       <div className="my-auto p-7">
         <h1 className="text-white  absolute top-1/4 text-5xl sm:top-36 sm:text-8xl font-medium sm:pb-8">Lifestyle</h1>

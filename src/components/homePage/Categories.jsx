@@ -3,9 +3,9 @@ import React from 'react'
 function Categories() {
     return (
     <>
-        <div className="grid sm:grid-cols-3 gap-4  grid-cols-1 self-auto p-5">
+        <div className="grid sm:grid-cols-3 gap-4  grid-cols-1 self-auto p-5" id="all">
             <div className="kitchen transform hover:shadow-2xl  sm:col-span-1 bg-no-repeat bg-center bg-cover flex  py-10 sm:p-60">
-                <h1 className="bg-yellow-500 hover:text-black sm:p-4 p-2 text-white sm:text-4xl font-medium uppercase ">All</h1>
+                <h1 className="bg-yellow-500 hover:text-black sm:p-4 p-2 text-white sm:text-4xl font-medium uppercase " >All</h1>
             </div>
             <div className="kitchen transform hover:shadow-2xl sm:col-span-2 bg-no-repeat bg-center bg-cover flex  py-10 sm:p-60">
                 <h1 className="bg-yellow-500 hover:text-black sm:p-4 p-2 text-white sm:text-4xl font-medium uppercase ">kitchen</h1>
