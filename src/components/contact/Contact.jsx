@@ -9,7 +9,7 @@ export default function Contact() {
         form_data.forEach(function (value, key) {
             payload[key] = value;
         });
-        //  console.log("payload", payload);
+         console.log("payload", payload);
         // Place your API call here to submit your payload.
     };
 

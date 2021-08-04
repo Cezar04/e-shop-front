@@ -6,6 +6,8 @@ import Navbar from "./components/navbar/Navbar";
 import Register from './components/register&login/Register';
 import Login from './components/register&login/Login';
 import Contact from './components/contact/Contact';
+import Products from './components/products/Products';
+import About from './components/about/About';
 
 
 
@@ -20,6 +22,8 @@ function App() {
       <Route exact path="/register" render={(props)=><Register {...props}/>}/>
       <Route exact path="/login" render={(props)=><Login {...props}/>}/>
       <Route exact path="/contact" render={(props)=><Contact {...props}/>}/>
+      <Route exact path="/products" render={(props)=><Products {...props}/>}/>
+      <Route exact path="/about-us" render={(props)=><About {...props}/>}/>
 
 
 
