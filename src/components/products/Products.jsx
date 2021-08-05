@@ -1,6 +1,9 @@
 import React from 'react'
 import FilterMeniu from './filter/FilterMeniu'
 import ProductCard from './ProductCard'
+import {Link} from 'react-router-dom'
+
+// trebuie sa iei id ul produsul sa il dai
 
 function Products() {
     return (
@@ -9,17 +12,15 @@ function Products() {
              <FilterMeniu/>
            </div>
            <div className="grid sm:grid-cols-4 gap-2 sm:p-20 p-3  ">
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
+            <Link to="product-detail"><ProductCard/></Link>
+            <Link to="product-detail"><ProductCard/></Link>
+            <Link to="product-detail"><ProductCard/></Link>
+            <Link to="product-detail"><ProductCard/></Link>
+            <Link to="product-detail"><ProductCard/></Link>
+            <Link to="product-detail"><ProductCard/></Link>
+            <Link to="product-detail"><ProductCard/></Link>
+            <Link to="product-detail"><ProductCard/></Link>
+
            </div>
 
         </div>

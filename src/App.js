@@ -8,6 +8,7 @@ import Login from './components/register&login/Login';
 import Contact from './components/contact/Contact';
 import Products from './components/products/Products';
 import About from './components/about/About';
+import ProductPage from './components/detailPage/ProductPage';
 
 
 
@@ -24,6 +25,8 @@ function App() {
       <Route exact path="/contact" render={(props)=><Contact {...props}/>}/>
       <Route exact path="/shop" render={(props)=><Products {...props}/>}/>
       <Route exact path="/about-us" render={(props)=><About {...props}/>}/>
+      {/* aici trebuie sa pui id-ul produsului */}
+      <Route exact path="/product-detail" render={(props)=><ProductPage {...props}/>}/>
 
 
 
