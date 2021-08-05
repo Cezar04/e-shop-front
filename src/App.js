@@ -22,7 +22,7 @@ function App() {
       <Route exact path="/register" render={(props)=><Register {...props}/>}/>
       <Route exact path="/login" render={(props)=><Login {...props}/>}/>
       <Route exact path="/contact" render={(props)=><Contact {...props}/>}/>
-      <Route exact path="/products" render={(props)=><Products {...props}/>}/>
+      <Route exact path="/shop" render={(props)=><Products {...props}/>}/>
       <Route exact path="/about-us" render={(props)=><About {...props}/>}/>
 
 
