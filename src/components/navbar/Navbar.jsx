@@ -20,9 +20,9 @@ function Navbar() {
 
                 <div className="hidden md:block">
                        <ul className="flex ">
-                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"><Link to="/shop">Shop</Link></li>
-                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"><Link>About Us</Link></li>
-                           <li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"><Link to="/contact">Contact</Link></li>
+                       <Link to="/shop"><li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Shop</li></Link>
+                       <Link to="/about-us"><li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">About Us</li></Link>
+                       <Link to="/contact"><li className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Contact</li></Link>
                        </ul>
                 </div>
 
@@ -94,26 +94,26 @@ function Navbar() {
            
                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                
-                  <a
-                    href="#"
+                  <Link 
+                    to="/shop"
                     className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Meniu1
-                  </a>
+                    Shop
+                  </Link>
   
-                  <a
-                    href="#"
+                  <Link
+                    to="/about-us"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Meniu2
-                  </a>
+                    About Us
+                  </Link>
   
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Meniu3
-                  </a>
+                    Contact
+                  </Link>
                 </div>
                 <div className="flex justify-center">
                   <SecondaryMenu />

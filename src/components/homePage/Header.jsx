@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 function Header() {
@@ -14,7 +15,7 @@ function Header() {
         <h1 className="text-white sm:text-8xl absolute top-1/4 py-20 pl-20 sm:py-7 text-5xl font-medium sm:pl-36">- Furniture</h1>
         <p className="text-white p-10 text-xl border-l-4 border-yellow-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quo minima pariatur ipsum at similique temporibus excepturi, adipisci nesciunt libero.</p>
         <div className="py-7">
-          <a href="#" className=" py-2 bg-yellow-500 font-medium text-3xl p-6 text-white uppercase hover:text-black">about us</a>
+          <Link to='/about-us' className=" py-2 bg-yellow-500 font-medium text-3xl p-6 text-white uppercase hover:text-black">about us</Link>
         </div>
       </div>
 
