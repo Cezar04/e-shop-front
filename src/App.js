@@ -9,11 +9,14 @@ import Contact from './components/contact/Contact';
 import Products from './components/products/Products';
 import About from './components/about/About';
 import ProductPage from './components/detailPage/ProductPage';
+import ShoppingCart from './components/shoppingCart/ShoppingCart';
+import data from './components/data/data';
 
 
 
 
 function App() {
+
   return (
     <BrowserRouter>
     <div className="App">
@@ -27,6 +30,7 @@ function App() {
       <Route exact path="/about-us" render={(props)=><About {...props}/>}/>
       {/* aici trebuie sa pui id-ul produsului */}
       <Route exact path="/product-detail" render={(props)=><ProductPage {...props}/>}/>
+      <Route exact path="/shopping-cart" render={(props)=><ShoppingCart{...props}/>}/>
 
 
 

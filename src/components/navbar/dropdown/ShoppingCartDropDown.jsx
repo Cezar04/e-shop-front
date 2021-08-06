@@ -1,5 +1,6 @@
 import React from 'react'
 import {createPopper} from '@popperjs/core';
+import { Link } from 'react-router-dom';
 
 function ShoppingCartDropDown() {
       // dropdown props
@@ -74,7 +75,7 @@ function ShoppingCartDropDown() {
 
 
                 <div className="flex justify-items-center">
-                    <button className="mx-auto bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  ease-linear transition-all duration-150"> <i class="fas fa-shopping-cart pr-4"></i>Checkout</button>
+                    <Link to="/shopping-cart"><button className="mx-auto bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  ease-linear transition-all duration-150"> <i class="fas fa-shopping-cart pr-4"></i>Checkout</button></Link>
 
                 </div>
               </div>
