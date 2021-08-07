@@ -4,11 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 function ProductPage() {
-    const breakPoints=[
-        {width:500, itemsToShow: 1},
-        {width:768, itemsToShow: 2},
-        {width:1200, itemsToShow: 3}
-    ];
+
     return (
         <div className="sm:flex">
             <Carousel className="pt-36 sm:pb-36" >
@@ -37,7 +33,7 @@ function ProductPage() {
                 <h1 className="text-lg pt-5  container text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero dolorem cupiditate amet neque voluptatibus voluptatum commodi deleniti laudantium sequi, optio eius sunt dolores natus eos dignissimos velit accusantium! Dicta.</h1>
                 <h1 className="sm:pt-20 pt-10 text-3xl font-bold">3000 <span>lei</span></h1>
                 <div className="pt-20 pb-10">
-                <Link to="/shopping-cart" className=" bg-yellow-500 rounded hover:shadow-xl items-center p-4 font-medium text-white hover:text-black" >Add to Shopping Cart <i class="fas fa-shopping-cart text-red-500 "></i></Link>
+                <Link to="/shopping-cart" className=" bg-yellow-500 rounded hover:shadow-xl items-center p-4 font-medium text-white hover:text-black" >Add to Shopping Cart <i className="fas fa-shopping-cart text-red-500 "></i></Link>
                 </div>
             </div>
         </div>

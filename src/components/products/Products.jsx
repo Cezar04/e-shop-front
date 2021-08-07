@@ -15,10 +15,11 @@ const {products}= data
              <FilterMeniu/>
            </div>
            <div className="grid sm:grid-cols-4 gap-2 sm:p-20 p-3  ">
+            
            {
              products.map((item)=>(
              
-              <Link to="product-detail"><ProductCard key={item.id} item={item}/></Link>
+              <Link to={`/product-detail/${item.id}`} key={item.id} id="RouterNavLink"><ProductCard  item={item}/></Link>
              
              ))
            }

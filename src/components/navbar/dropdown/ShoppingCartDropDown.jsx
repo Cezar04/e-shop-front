@@ -36,7 +36,7 @@ function ShoppingCartDropDown() {
                 }}
        
               >
-              <i class="fas fa-shopping-cart"></i>
+              <i className="fas fa-shopping-cart"></i>
               </button>
 
               
@@ -75,7 +75,7 @@ function ShoppingCartDropDown() {
 
 
                 <div className="flex justify-items-center">
-                    <Link to="/shopping-cart"><button className="mx-auto bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  ease-linear transition-all duration-150"> <i class="fas fa-shopping-cart pr-4"></i>Checkout</button></Link>
+                    <Link to="/shopping-cart"><button className="mx-auto bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  ease-linear transition-all duration-150"> <i className="fas fa-shopping-cart pr-4"></i>Checkout</button></Link>
 
                 </div>
               </div>

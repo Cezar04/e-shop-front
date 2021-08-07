@@ -37,7 +37,7 @@ function AccountDropDown() {
                 }}
               
               >
-               <i class="far fa-user"></i>
+               <i className="far fa-user"></i>
               </button>
               <div
                 ref={popoverDropdownRef}

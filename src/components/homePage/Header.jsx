@@ -20,8 +20,8 @@ function Header() {
       </div>
 
       <div className="sm:my-auto hidden sm:block">
-        <a href="#"><h1 className="text-white transform rotate-90">facebook</h1></a> 
-        <a href="#"><h1 className="text-white transform rotate-90 sm:pl-36">instagram</h1></a>
+        <a href="www.faceboo.com"><h1 className="text-white transform rotate-90">facebook</h1></a> 
+        <a href="wwww.instagram.com"><h1 className="text-white transform rotate-90 sm:pl-36">instagram</h1></a>
       </div>
     </div>
   )

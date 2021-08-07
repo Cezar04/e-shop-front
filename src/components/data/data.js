@@ -280,7 +280,7 @@ const data ={
             images:{
                 pic1:"https://www.bellabathrooms.co.uk/pub/media/catalog/product/cache/fa40908ee478e026107d1ef680964286/h/u/hudson-reed-fusion-gloss-grey-furniture-pack-1100mm-left-hand.jpg",
                 pic2:"https://www.bellabathrooms.co.uk/pub/media/catalog/product/cache/fa40908ee478e026107d1ef680964286/h/u/hudson-reed-fusion-gloss-grey-mist-vanity-unit-600mm_1.jpg",
-                pic2:"https://www.bellabathrooms.co.uk/pub/media/catalog/product/cache/fa40908ee478e026107d1ef680964286/h/u/hudson-reed-fusion-gloss-grey-furniture-pack-1100mm-drawing.jpg"
+                pic3:"https://www.bellabathrooms.co.uk/pub/media/catalog/product/cache/fa40908ee478e026107d1ef680964286/h/u/hudson-reed-fusion-gloss-grey-furniture-pack-1100mm-drawing.jpg"
             },
             discription:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero dolorem cupiditate amet neque voluptatibus voluptatum commodi deleniti laudantium sequi, optio eius sunt dolores natus eos dignissimos velit accusantium! Dicta."
 

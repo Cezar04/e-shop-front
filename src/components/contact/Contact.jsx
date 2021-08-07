@@ -39,26 +39,26 @@ export default function Contact() {
 
                             </div>
                             <div className="text-center p-10 ">
-                                <a className="bg-yellow-500 p-10 " href="tel:+"><i class="fas fa-phone text-2xl sm:text-4xl md:text-2xl font-bold leading-tight "></i></a>
+                                <a className="bg-yellow-500 p-10 " href="tel:+"><i className="fas fa-phone text-2xl sm:text-4xl md:text-2xl font-bold leading-tight "></i></a>
                             </div>
                             <div className="text-center p-5">
                                 <h3 className="text-2xl sm:text-3xl md:text-2xl font-bold leading-tight">or you can send us a message</h3>
                             </div>
                             <div className="mt-8 w-full px-2 sm:px-6">
                             <div className="flex flex-col mt-8">
-                                    <label for="name" className="text-lg font-semibold leading-tight">
+                                    <label htmlFor="name" className="text-lg font-semibold leading-tight">
                                         Name
                                     </label>
                                     <input id="name" required aria-required="true" name="name" className="h-10 px-2 w-full rounded mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 dark:focus:border-indigo-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 border-gray-300 border shadow" type="email" />
                                 </div>
                                 <div className="flex flex-col mt-8">
-                                    <label for="email" className="text-lg font-semibold leading-tight">
+                                    <label htmlFor="email" className="text-lg font-semibold leading-tight">
                                         Email
                                     </label>
                                     <input id="email" required aria-required="true" name="email" className="h-10 px-2 w-full rounded mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 dark:focus:border-indigo-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 border-gray-300 border shadow" type="email" />
                                 </div>
                                 <div className="flex flex-col mt-5">
-                                    <label for="message" className="text-lg font-semibold fleading-tight">
+                                    <label htmlFor="message" className="text-lg font-semibold fleading-tight">
                                         Message
                                     </label>
                                     <textarea id="password" required aria-required="true" name="password" type="password" className="h-36 px-2 w-full rounded mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 dark:focus:border-indigo-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 border-gray-300 border shadow" />

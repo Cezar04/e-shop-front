@@ -14,7 +14,7 @@ function BestBuy() {
             <div className="flex justify-center uppercase">
                 <h1 className="text-yellow-500 p-10 font-medium xl:text-5xl text-3xl mb-4 text-center md:text-center lg:text-center">Top sellers</h1>
             </div>
-            <Carousel className="" breakPoints={breakPoints} enableAutoPlay="true" >
+            <Carousel className="" breakPoints={breakPoints} enableAutoPlay={true} >
 
                 <div className=" sm:m-9  w-screen sm:h-96  ">
                     <img className="" src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />

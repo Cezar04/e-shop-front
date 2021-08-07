@@ -22,19 +22,19 @@ function ShoppingCart() {
                         <tbody>
                             <tr>
                                 <td className="hidden pb-4 sm:table-cell">
-                                    <a href="">
+                                    <div href="">
                                         <img className="w-20" src="https://limg.app/i/Calm-Cormorant-Catholic-Pinball-Blaster-yM4oub.jpeg" alt="" />
-                                    </a>
+                                    </div>
                                 </td>
                                 <td>
-                                    <a href="#">
+                                    <div href="#">
                                         <p class="mb-2 md:ml-4">Earphone</p>
                                         <form action="" method="POST">
                                         <button type="submit" class="text-gray-700 md:ml-4">
                                             <small><i class="fas fa-trash-alt"></i></small>
                                         </button>
                                         </form>
-                                    </a>
+                                    </div>
                                 </td>
                                 <td class="justify-center md:justify-end md:flex mt-6">
                                     <div class="w-20 h-10">

@@ -1,13 +1,12 @@
 import React from 'react'
-import {Link}from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 function ProductCard(props) {
     const {item}=props;
 
-    console.log(item.images.pic1)
     return (
-        <div className="border bg-white pb-10 rounded hover:shadow-2xl ">
+        <div className="border bg-white pb-10 rounded hover:shadow-2xl">
             <div className="p-1">
                 <img className="h-64 w-screen rounded " src={item.images.pic1} alt="" />
             </div>
@@ -19,7 +18,7 @@ function ProductCard(props) {
             </div>
 
             <div className="pt-5 text-center">
-                <Link to="" className=" bg-yellow-500 rounded hover:shadow-xl items-center p-4 font-medium text-white hover:text-black" >Add to Shopping Cart <i class="fas fa-shopping-cart text-red-500 "></i></Link>
+                <Link to="/shopping-cart"  className=" bg-yellow-500 rounded hover:shadow-xl items-center p-4 font-medium text-white hover:text-black" >Add to Shopping Cart <i className="fas fa-shopping-cart text-red-500 "></i></Link>
             </div>
         </div>
 
