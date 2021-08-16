@@ -8,7 +8,7 @@ function SearchDropDown() {
             <button onClick={() => setIsOpen(!isOpen)} 
                   type="button"
                   aria-controls="mobile-menu"
-                  aria-expanded="false" className="text-white font-bold uppercase text-sm px-6 py-3  outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ">
+                  aria-expanded="false" className="text-white font-bold uppercase text-sm px-4 py-3  outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ">
                 <i className="fas fa-search"></i>
             </button>
             <Transition show={isOpen}

@@ -1,16 +1,20 @@
+import { hide } from '@popperjs/core';
 import React from 'react'
 
 
-function FilterMeniu() {
+function FilterMeniu({...products}) {
+    const ceva= products.products;
+  
     return (
         <div className="">
-            <div className="flex justify-center items-center  ">
-                <h1 className="uppercase pr-5 sm:mr-2 mr-1 border-2 border-gray-500 sm:p-4 p-1 sm:font-bold hover:bg-yellow-500 ">all</h1>
-                <h1 className="uppercase pr-5 sm:mr-2 mr-1 border-2 border-gray-500 sm:p-4 p-1 sm:font-bold hover:bg-yellow-500">Kitchen</h1>
-                <h1 className="uppercase pr-5 sm:mr-2 mr-1 border-2 border-gray-500 sm:p-4 p-1 sm:font-bold hover:bg-yellow-500">Bedroom</h1>
-                <h1 className="uppercase  border-2 border-gray-500 sm:font-bold sm:p-4 p-1  hover:bg-yellow-500">Bathroom</h1>
+            {ceva.map((item)=>(
+          <div className="flex justify-center items-center  ">
+            <h1 className="uppercase pr-5 sm:mr-2 mr-1 border-b-2 border-gray-500 sm:p-4 p-1 sm:font-bold hover:bg-yellow-500 ">{item.categoryType.includes(!item.categoryType<1)?('esti prost'):(item.categoryType)}</h1>
+      
 
-            </div>
+        </div>
+            ))}
+  
         </div>
     )
 }

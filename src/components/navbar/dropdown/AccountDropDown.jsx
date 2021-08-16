@@ -26,7 +26,7 @@ function AccountDropDown() {
             <div className="relative inline-flex align-middle w-full">
               <button
                 className={
-                  "text-white font-bold uppercase text-sm px-6 py-3  outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 " 
+                  "text-white font-bold uppercase text-sm px-4 py-3  outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 " 
                 }
                 type="button"
                 ref={btnDropdownRef}

@@ -8,8 +8,8 @@ function Navbar() {
 
     return (
 <div>
-    <nav className="bg-black fixed z-50 w-full">
-        <div className="  mx-auto px-4  sm:px-6 lg:px-8">
+    <nav className="bg-black fixed z-50 w-full ">
+        <div className="  mx-auto px-10  sm:px-6 lg:px-8">
         
         <div className="flex justify-between h-16 items-center ">
             
@@ -26,7 +26,7 @@ function Navbar() {
                        </ul>
                 </div>
 
-                <div className="hidden md:block">
+                <div className="">
                   <SecondaryMenu />
                 </div>
                  
@@ -115,9 +115,7 @@ function Navbar() {
                     Contact
                   </Link>
                 </div>
-                <div className="flex justify-center">
-                  <SecondaryMenu />
-                </div>
+            
         
               </div>
             )}

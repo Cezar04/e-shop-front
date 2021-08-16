@@ -10,6 +10,7 @@ import Products from './components/products/Products';
 import About from './components/about/About';
 import ProductPage from './components/products/detailPage/ProductPage';
 import ShoppingCart from './components/shoppingCart/ShoppingCart';
+import Cart from './components/shoppingCart/Cart';
 
 
 
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
      
       <Navbar />
+      <Cart/>
       <Route exact path='/' render={(props)=><Home {...props}/>}/>
       <Route exact path="/register" render={(props)=><Register {...props}/>}/>
       <Route exact path="/login" render={(props)=><Login {...props}/>}/>

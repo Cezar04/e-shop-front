@@ -133,7 +133,7 @@ const data ={
                 pic3:"https://www.prodeco-global.com/wp-content/uploads/2020/05/PRODECO-KITCHEN-CABINET-6.jpg"
 
             },
-            discription:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero dolorem cupiditate amet neque voluptatibus voluptatum commodi deleniti laudantium sequi, optio eius sunt dolores natus eos dignissimos velit accusantium! Dicta."
+            discription:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta."
 
         },
         {
