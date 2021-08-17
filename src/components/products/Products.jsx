@@ -8,13 +8,34 @@ import data from "../data/data";
 
 function Products() {
 const {products}= data
+const lista = []
+
+for(let element of products.map((item)=>item.categoryType)){
+  lista.push(element)
+}
+
+const removeDublicate =(lista)=>{
+  return lista.filter((a,b)=>lista.indexOf(a)===b)
+}
+
+const handleClick= (e)=>{
+  console.log(e.target.value)
+}
+
+
 
     return (
-        <div className="bg-gray-100">
-           <div className="pt-28 border text-center bg-white">
-             <FilterMeniu products={products}/>
+        <div className="bg-gray-200">
+           <div className="pt-20  border text-center  bg-white flex justify-center">
+             <FilterMeniu item={"all"} handleClick={handleClick} />
+            {removeDublicate(lista).map((item)=>(
+            <FilterMeniu item={item} handleClick={handleClick}  />
+            ))}
+                
+         
+          
            </div>
-           <div className="grid sm:grid-cols-4 gap-2 sm:p-20 p-3  ">
+           <div className="grid sm:grid-cols-4 gap-3 sm:pl-24 sm:pr-24 p-3  ">
             
            {
              products.map((item)=>(

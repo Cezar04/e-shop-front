@@ -17,9 +17,9 @@ function ProductCard(props) {
                 <img className="h-64 w-screen rounded " src={item.images.pic1} alt="" />
             </div>
             <div className="p-5 ">
-                <h1 className="pt-5 text-2xl font-bold ">{item.name}</h1>
-            {item.stock? (<p className="pt-5 text-yellow-500 text-medium font-medium uppercase">in stock</p>) :(<p className="pt-5 text-red-500 text-medium font-medium uppercase">out of stock</p>)}
-                <h1 className="text-center pt-10 text-2xl font-semibold">price: {item.price} <span>$</span></h1>
+                <h1 className="text-3xl font-bold ">{item.name}</h1>
+            {item.stock? (<p className="pt-5 text-yellow-500 text-medium font-semibold uppercase">in stock</p>) :(<p className="pt-5 text-red-500 font-semibold uppercase">out of stock</p>)}
+                <h1 className=" pt-5 text-xl font-medium">Price: {item.price} <span>$</span></h1>
             </div>
             </Link>
             <div className="pt-5 text-center">

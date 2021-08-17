@@ -16,12 +16,12 @@ import Cart from './components/shoppingCart/Cart';
 
 
 
+
 function App() {
 
   return (
     <BrowserRouter>
     <div className="App">
-     
       <Navbar />
       <Cart/>
       <Route exact path='/' render={(props)=><Home {...props}/>}/>
