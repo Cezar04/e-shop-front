@@ -11,6 +11,7 @@ import About from './components/about/About';
 import ProductPage from './components/products/detailPage/ProductPage';
 import ShoppingCart from './components/shoppingCart/ShoppingCart';
 import Cart from './components/shoppingCart/Cart';
+import ScrollToTop from './components/scrollProblem/ScrollToTop';
 
 
 
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <div className="App">
       <Navbar />
       <Cart/>

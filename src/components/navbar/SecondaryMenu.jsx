@@ -8,7 +8,7 @@ function SecondaryMenu() {
   
     return (
     <div className="flex">
-      <SearchDropDown/>
+      /
       <ShoppingCartDropDown/>
       <AccountDropDown/>
      
