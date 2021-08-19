@@ -1,10 +1,10 @@
 import React from 'react'
 import FilterMeniu from './filter/FilterMeniu'
 import ProductCard from './ProductCard'
-import {Link} from 'react-router-dom'
 import data from "../data/data";
 
 import {useState} from 'react';
+import SearchAndSort from './filter/SearchAndSort';
 
 // trebuie sa iei id ul produsul sa il dai
 
@@ -12,7 +12,9 @@ function Products() {
 // dupa ce faci asta, sa te gandesti la cum pui totul in cartContext, si daca te ajuta
 
   const [products, setProducts] = useState(data.products)
-  const [productCopy, setProductCopy] = useState(products)
+  const [productCopy, setProductCopy] = useState(data.products)
+
+
 
 const lista = []
 
@@ -25,7 +27,7 @@ const removeDublicate =(lista)=>{
 }
 
 const handleClick= (e)=>{
-  console.log(e.target.value)
+ 
   // let productCopy;
   if(e.target.value==="all"){
     setProductCopy(products)
@@ -36,11 +38,44 @@ const handleClick= (e)=>{
   }
 }
 
+  const handleSearch=(e)=>{
+    const searched= e.target.value;
+
+    const foo = [...productCopy].filter((prod)=>{
+      if(prod.name.toLowerCase().includes(searched)||
+      prod.discription.toLowerCase().includes(searched)||
+      prod.category.toLowerCase().includes(searched)
+      ){
+        return prod;
+      }
+
+    })
+
+    if(searched===""){
+      setProductCopy(data.products)
+    }else{
+      setProductCopy(foo)
+    }
+      
+  }
 
 
+  const sortArray = e =>{
+    const sorting = e.target.value;
+    const sorted = [...productCopy].sort((a,b)=>{
+      if(sorting==="desc"){
+        return b.price-a.price
+      }
+      if(sorting==="asc"){
+        return a.price-b.price
+      }
+    });
+    setProductCopy(sorted)
+  }
+ 
     return (
         <div className="bg-gray-200 pb-20">
-           <div className="pt-20  border text-center  bg-white flex justify-center">
+           <div className="pt-20 z-30  border text-center  bg-white flex justify-center  fixed w-screen">
               <FilterMeniu item={"all"} handleClick={handleClick} key={Math.random()} />
             {removeDublicate(lista).map((item)=>(
               <FilterMeniu item={item} handleClick={handleClick} key={Math.random()}  />
@@ -50,21 +85,12 @@ const handleClick= (e)=>{
           
            </div>
            
-           <div className="pt-2 relative flex justify-center text-gray-600">
-              <input className="border-2 border-gray-500 bg-white sm:h-10 sm:px-5 px-1 sm:pr-16 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Search"/>
-              <div className="">
-                <select className="border-2 border-gray-500 bg-white sm:h-10 p-1  rounded-lg text-sm ">
-                  <option  >Select</option>
-                  <option className="text-lg p-2" value="asc">Price ascending</option>
-                  <option className="text-lg p-2" value="desc">Price descending</option>
-                </select>
-              </div>
-           </div>
+           <SearchAndSort handleSearch={handleSearch} sortArray={sortArray}  />
            
            
-           <div className="grid sm:grid-cols-4 gap-3 sm:pl-24 sm:pr-24 p-3  ">
+           <div className="grid sm:grid-cols-4 gap-3 sm:pl-24 sm:pr-24 p-3 pt-48 sm:pt-60">
             
-           {
+           {productCopy.length===0?(<div className=" flex justify-center"><div className="text-center  text-lg font-bold text-yellow-500 bg-black p-10 rounded-lg "> Sorry! Nothing Matched</div></div>):
              productCopy.map((item)=>(
              
               <div  key={item.id} id="RouterNavLink"><ProductCard  item={item}/></div>

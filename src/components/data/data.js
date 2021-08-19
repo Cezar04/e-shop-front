@@ -5,7 +5,7 @@ const data ={
             category: "sofas",
             categoryType: "livingRoom",
             name:"Canapea1",
-            price:"2000",
+            price:2000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/d/6/1/f/d61f705cf9974254adb2e6e9082afd8f57e85533_SOFSMN009ORA_UK_Samona_Left_Hand_Facing_Corner_Sofa_Amber_Velvet_ar3_2_LB01_PS.png",
@@ -20,7 +20,7 @@ const data ={
             category: "sofas",
             categoryType: "livingRoom",
             name:"Canapea2",
-            price:"4000",
+            price:4000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/1/d/8/8/1d8843bc04848b211303455b56864feeb71c2aef_SOFFBY001GRY_UK_FERNSBY_3_Seater_Recycled_Weave_Silver_ar3_2_LB01_PS.png",
@@ -35,7 +35,7 @@ const data ={
             category: "sofas",
             categoryType: "livingRoom",
             name:"Canapea3",
-            price:"3000",
+            price:3000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/5/d/a/2/5da2fbc08bc8ff6c361bcfe9242a57e26329d6ff_SOFKOO003BLU_UK_Kooper_2_Seater_Sofa_Sapphire_Blue_Velvet_ar3_2_LB01_PS.png",
@@ -50,7 +50,7 @@ const data ={
             category: "sofas",
             categoryType: "livingRoom",
             name:"Canapea4",
-            price:"1500",
+            price:1500,
             stock:false,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/b/1/b/4/b1b4e18bfaaa5f46d536881dc3236a81e521aa44_SOFMTL003BEI_UK_MATHILDE_Large_25_Seater_Sofa_Oat_Weave_ar3_2_LB01_PS.png",
@@ -65,7 +65,7 @@ const data ={
             category: "armchair",
             categoryType: "livingRoom",
             name:"Fotoliu1",
-            price:"1000",
+            price:1000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/a/f/d/4/afd445db43a70782ad716d79c3a7bc72689cb113_SOFLTT002GRY_UK_Lottie_Armchair_Chalk_Grey_ar3_2_LB01_PS.png",
@@ -80,7 +80,7 @@ const data ={
             category: "armchair",
             categoryType: "livingRoom",
             name:"Fotoliu2",
-            price:"1500",
+            price:1500,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/2/8/4/8/2848b5ccdb572288d9207f4c23dec81d0bcdb0c0_CHAJRD043BLA_UK_Jarrod_Armchair_Midnight_Black_Weave_ar3_2_LB01_PS.png",
@@ -95,7 +95,7 @@ const data ={
             category: "cofeeTable",
             categoryType: "livingRoom",
             name:"Masa1",
-            price:"1000",
+            price:1000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/9/9/7/7/9977acfb1a07597a862b1e6485f6453b42eae955_TBLLOM025NAT_UK_Lomond_Lift_Top_Coffee_Table_Storage_Mango_wood_and_Brass_ar3_2_LB01_PS.png",
@@ -110,7 +110,7 @@ const data ={
             category: "cofeeTable",
             categoryType: "livingRoom",
             name:"Masa2",
-            price:"6000",
+            price:6000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/7/0/c/d/70cd53eeb16e82006fddc870aa9b8556fd9d1f4d_CTBAND033GRY_UK_Anderson_Coffee_table_Mocha_Mango_Wood_and_Copper_ar3_2_LB01_PS.png",
@@ -125,7 +125,7 @@ const data ={
             category: "body",
             categoryType: "kitchen",
             name:"Corp bucatarie",
-            price:"9000",
+            price:9000,
             stock:true,
             images:{
                 pic1:"https://www.prodeco-global.com/wp-content/uploads/2020/05/PRODECO-KITCHEN-CABINET-3.jpg",
@@ -141,7 +141,7 @@ const data ={
             category: "sink",
             categoryType: "kitchen",
             name:"Chiuveta2",
-            price:"4000",
+            price:4000,
             stock:true,
             images:{
                 pic1:"https://www.ikea.com/gb/en/images/products/sinksjoen-inset-sink-1-1-2-bowl-black-quartz-composite__0865690_pe659654_s5.jpg?f=s",
@@ -156,7 +156,7 @@ const data ={
             category: "bed",
             categoryType: "bedroom",
             name:"pat1",
-            price:"1000",
+            price:1000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/c/9/8/9/c989405785a82df1b58789f0734bc2150d40ee0a_BEDBAH008BLU_UK_Bahra_King_Size_Bed_with_Ottoman_Storage_Midnight_Blue_Corduroy_Velvet_ar3_2_LB.",
@@ -171,7 +171,7 @@ const data ={
             category: "bed",
             categoryType: "bedroom",
             name:"pat2",
-            price:"8000",
+            price:8000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/a/f/6/5/af65104cf28e2d63b00a4c455624720e35ca3132_BEDSKY130GRY_UK_Skye_Double_bed_Drawer_Storage_Light_Grey_Velvet_ar3_2_LB02_LS.jpg",
@@ -186,7 +186,7 @@ const data ={
             category: "wardrobe",
             categoryType: "bedroom",
             name:"Dressing1",
-            price:"8000",
+            price:8000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/d/b/4/2/db4248df7793f81ce68dd84b5cdc3f50b00dee36_WDISAI033GRY_UK_Amadeo_3_door_250cm_Sliding_Wardrobe_Pebble_Grey_Frame_Mirror_doors_Standard_In.png",
@@ -201,7 +201,7 @@ const data ={
             category: "wardrobe",
             categoryType: "bedroom",
             name:"Dressing2",
-            price:"3000",
+            price:3000,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/5/3/9/4/5394a49b0c05a35e8f0879c589c182ee30f195cd_WARLAR015OWT_UK_MADE_Essentials_Larsen_Triple_Wardrobe_Shelves_Oak_Effect_White_ar3_2_LB02_LS.jpg",
@@ -216,7 +216,7 @@ const data ={
             category: "wardrobe",
             categoryType: "bedroom",
             name:"Dressing3",
-            price:"5000",
+            price:5000,
             stock:false,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/2/5/2/2/2522415a35941add802a6cbcc409abd01503e120_WRDMYL009WHI_UK_MADE_Essentials_Elso_Sliding_Wardrobe_240cm_White_Frame_White_Effect_Mirror_Doo.png",
@@ -231,7 +231,7 @@ const data ={
             category: "accesories",
             categoryType: "bathroom",
             name:"suport1",
-            price:"400",
+            price:400,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/7/c/3/c/7c3cbeea97e5bff899d8aabdd23476c9e7d9824e_BTALOM002DRK_UK_Maxine_Bathroom_Caddy_Mango_Wood_Black_ar3_2_LB02_LS.jpg",
@@ -246,7 +246,7 @@ const data ={
             category: "accesories",
             categoryType: "bathroom",
             name:"suport2",
-            price:"400",
+            price:500,
             stock:true,
             images:{
                 pic1:"https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/1/c/d/b/1cdb79dac1a2a005144886f292844c337a837178_BTANAL002NAT_UK_Nala_Rattan_Freestanding_Storage_Caddy_Natural_ar3_2_LB02_LS.jpg",
@@ -261,7 +261,7 @@ const data ={
             category: "furniture",
             categoryType: "bathroom",
             name:"dulap1",
-            price:"900",
+            price:900,
             stock:true,
             images:{
                 pic1:"https://www.bellabathrooms.co.uk/pub/media/catalog/product/cache/fa40908ee478e026107d1ef680964286/e/l/elation-combination-straight-indigo-matt-furniture-pack-1000mm-right-hand.jpg",
@@ -275,7 +275,7 @@ const data ={
             category: "furniture",
             categoryType: "bathroom",
             name:"dulap2",
-            price:"2000",
+            price:2000,
             stock:true,
             images:{
                 pic1:"https://www.bellabathrooms.co.uk/pub/media/catalog/product/cache/fa40908ee478e026107d1ef680964286/h/u/hudson-reed-fusion-gloss-grey-furniture-pack-1100mm-left-hand.jpg",
