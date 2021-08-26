@@ -2,19 +2,32 @@ import React from 'react'
 import FilterMeniu from './filter/FilterMeniu'
 import ProductCard from './ProductCard'
 import data from "../data/data";
+// import dataProducts from "../../components/data/dataProductsService";
 
-import {useState} from 'react';
+import { MyCartState } from '../../context/store/Context';
+
+import {useState, useEffect} from 'react';
 import SearchAndSort from './filter/SearchAndSort';
+import axios from 'axios';
+
 
 // trebuie sa iei id ul produsul sa il dai
 
 function Products() {
-// dupa ce faci asta, sa te gandesti la cum pui totul in cartContext, si daca te ajuta
 
-  const [products, setProducts] = useState(data.products)
-  const [productCopy, setProductCopy] = useState(data.products)
+const [products, setProducts] = useState([])
+const [productCopy, setProductCopy] = useState([])
 
 
+const {state}= MyCartState();
+
+
+useEffect(()=>{
+  axios.get("http://localhost:8080//api/products/list").then(
+    (response)=>{setProducts(response.data);setProductCopy(response.data)}
+  )
+
+},[])
 
 const lista = []
 
@@ -29,6 +42,9 @@ const removeDublicate =(lista)=>{
 const handleClick= (e)=>{
  
   // let productCopy;
+  if(e.target.value===""){
+    setProductCopy(products)
+  }
   if(e.target.value==="all"){
     setProductCopy(products)
   }
@@ -38,13 +54,14 @@ const handleClick= (e)=>{
   }
 }
 
+
   const handleSearch=(e)=>{
     const searched= e.target.value;
 
     const foo = [...productCopy].filter((prod)=>{
-      if(prod.name.toLowerCase().includes(searched)||
-      prod.discription.toLowerCase().includes(searched)||
-      prod.category.toLowerCase().includes(searched)
+      if(prod.productName.toLowerCase().includes(searched.toLowerCase())||
+      prod.description.toLowerCase().includes(searched.toLowerCase())||
+      prod.category.toLowerCase().includes(searched.toLowerCase())
       ){
         return prod;
       }
@@ -52,7 +69,7 @@ const handleClick= (e)=>{
     })
 
     if(searched===""){
-      setProductCopy(data.products)
+      setProductCopy(products)
     }else{
       setProductCopy(foo)
     }
@@ -90,10 +107,10 @@ const handleClick= (e)=>{
            
            <div className="grid sm:grid-cols-4 gap-3 sm:pl-24 sm:pr-24 p-3 pt-48 sm:pt-60">
             
-           {productCopy.length===0?(<div className=" flex justify-center"><div className="text-center  text-lg font-bold text-yellow-500 bg-black p-10 rounded-lg "> Sorry! Nothing Matched</div></div>):
+           {productCopy.length===0 ? (<div className=" flex justify-center"><div className="text-center  text-lg font-bold text-yellow-500 bg-black p-10 rounded-lg ">Sorry! Looks like we don't have that item.</div></div>):
              productCopy.map((item)=>(
              
-              <div  key={item.id} id="RouterNavLink"><ProductCard  item={item}/></div>
+              <div  key={Math.random()} id="RouterNavLink"><ProductCard  item={item} /></div>
              
              ))
            }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+
 import data from '../../data/data'
 import Carouselul from './Carousel';
 import CartContext from '../../../context/cart/CartContext';

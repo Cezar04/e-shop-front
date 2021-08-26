@@ -3,8 +3,8 @@ import Header from './Header'
 import Categories from './Categories'
 import BestBuy from './BestBuy'
 import Testimonials from './Testimonials'
-import data from "../data/data";
-import {useState} from 'react';
+// import data from "../data/data";
+// import {useState} from 'react';
 import { Link } from 'react-router-dom'
 
 export default function Home() {

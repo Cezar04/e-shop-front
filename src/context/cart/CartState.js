@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 import CartContext from "./CartContext";
 import CartReducer from './CartReducer';
 import {SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM, HANDLE_CLICK} from '../Types'
@@ -13,16 +13,13 @@ function CartState({children}) {
     const initialState = {
         showCart: false,
         cartItems: [],
-        products: data.products,
-        productCopy: data.products
+        // products: data.products,
+        // productCopy: data.products
 
     };
 
     const [ state, dispatch]= useReducer(CartReducer, initialState);
 
-    const handleClick = (e)=>{
-        dispatch({type:HANDLE_CLICK, payload:e})
-    }
 
 
     const addToCart = item =>{
@@ -36,10 +33,25 @@ function CartState({children}) {
     const removeItem = (id)=>{
         dispatch({type:REMOVE_ITEM, payload:id})
     }
+
+    // const onAdd=(item)=>{
+    //     const exist = produs.find((x)=>x.id===info.id);
+    //     if(exist){
+    //         setProdus(
+    //             produs.map((x)=>
+    //                 x.id===info.id ? {...exist, qty: exist.qty+1}:x
+    //             )
+    //         );
+    //     }else{
+    //         setProdus([...produs,{...info, qty:1}])
+    //     }
+   
+    // }
     return (
     
 
             <CartContext.Provider value = {{
+                // onAdd,
                 showCart: state.showCart,
                 cartItems: state.cartItems,
                 addToCart,

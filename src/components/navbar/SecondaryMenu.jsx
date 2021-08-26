@@ -2,7 +2,7 @@ import React from 'react';
 
 import AccountDropDown from './dropdown/AccountDropDown';
 import ShoppingCartDropDown from './dropdown/ShoppingCartDropDown';
-import SearchDropDown from './dropdown/SearchDropDown';
+
 
 function SecondaryMenu() {
   
