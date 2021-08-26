@@ -20,7 +20,7 @@ const [productCopy, setProductCopy] = useState([])
 
 
 const {state}= MyCartState();
-
+console.log(state)
 
 useEffect(()=>{
   axios.get("http://localhost:8080//api/products/list").then(

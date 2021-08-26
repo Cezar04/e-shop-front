@@ -10,24 +10,25 @@ const slideNumberStyle = {
   fontWeight: 'bold',
 }
 
-const Carouselul = (images, name) => {
+const Carouselul = (images) => {
+
   const data = [
     {
-      image: images.images.pic1,
+      image:images.images.pic1,
       caption:""
     },
     {
-      image: images.images.pic2,
+      image:images.images.pic2,
       caption: ""
     },
     {
-      image: images.images.pic3,
+      image:images.images.pic3,
       caption: ""
     }
     
   ];
-  
   console.log(images.images.pic1)
+
   return(
 <div className="App pt-20">
       <div style={{ textAlign: "center" }}>
