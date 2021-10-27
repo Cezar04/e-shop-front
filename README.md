@@ -35,6 +35,15 @@ checkout items and make payments.
  
 </div>  
 
+#
+
+<div align="center">
+<img src="https://github.com/Cezar04/e-shop-front/blob/master/Screenshot%20from%202021-08-20%2009-38-16.png" width='300' />
+<img src="https://github.com/Cezar04/e-shop-front/blob/master/Screenshot%20from%202021-08-20%2009-38-22.png" width='300' />
+<img src="https://github.com/Cezar04/e-shop-front/blob/master/Screenshot%20from%202021-08-20%2009-38-29.png" width='300' />
+</div>
+
+
 ## Setup/Installation Requirements
 - clone the repository
 
