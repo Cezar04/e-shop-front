@@ -34,3 +34,31 @@ checkout items and make payments.
 
  
 </div>  
+
+## Setup/Installation Requirements
+- clone the repository
+
+### Requirements:
+JDK,Node.js, maildev
+
+### Backend in Java-Spring Boot
+- run backend app in your IDE (all the dependecys are in the pom.xml)
+- the databse is stored on heroku; If you want to create your own:
+  - Create database in PostreSQL;
+  - Update application.properties with your data for DB;
+
+### Frontend in React
+
+Email notification works with maildev.
+- in your termianl run:<br>
+  `$ npm install -g maildev`<br>
+  `$ maildev`
+
+this will install maildev, and open a SMTP Server + Web Interface for viewing and testing emails during development.
+the web interface will run at http://0.0.0.0:1080
+
+
+### Open Frontend folder in your IDE
+- run `$ npm install` in IDE terminal;
+- run `$ npm start`;
+
